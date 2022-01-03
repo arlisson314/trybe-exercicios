@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+        <!-- Considerando seu comentário que esclarece que se trata de um menu com vários itens clicáveis: delegue o tratamento do evento para um elemento mais acima na hierarquia, e obtenha o item clicado do objeto evento que é passado automaticamente para o listener. Exemplo: -->
+        
+        <ul id="fora">
+            <li id="dentro1">aaaaaa</li>
+            <li id="dentro2">aaaaaa</li>
+            <li id="dentro3">aaaaaa</li>
+        </ul>
+       <script>
+            var el = document.getElementById('fora');
+        el.addEventListener('click', function(e) {
+            alert(e.target.id);
+        });
+       </script>
+</body>
+</html>
