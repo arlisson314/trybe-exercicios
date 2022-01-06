@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercicio Form</title>
+    <!-- CSS only -->
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+        <div class="content">
+            <h1>Formulário</h1>
+        
+            <p>Dados pessoais</p>
+            <div class="input-group mb-3">
+            <label for="nome" class="input-group-text" id="basic-addon1">Nome completo: </label>
+            <input type="text" name="nome" maxlength="40" required id="nome" class="form-control" placeholder="Username" aria-label="Username" aria-describedby="basic-addon1">
+            </div>
+            
+            <div class="input-group mb-3">
+            <label for="email"class="input-group-text">Email:</label>
+            <input type="email" name="email" maxlength="50" required id="email" class="form-control" aria-label="Username">
+            <span class="input-group-text">@</span>
+            <input type="text" class="form-control" placeholder="Server" aria-label="Server">
+            </div>
+            
+            <div class="input-group mb-3">
+            <label for="cpf" class="input-group-text" id="basic-addon1">CPF: </label>
+            <input type="text" name="cpf" maxlength="11" required id="cpf" class="form-control" placeholder="000.000.000-00" aria-label="Username" aria-describedby="basic-addon1">
+            </div>
+
+            <div class="input-group mb-3">
+            <label for="endereço"  class="input-group-text" id="basic-addon1">Endereço: </label>
+            <input type="text" name="endereço" maxlength="200" required id="endereço" class="form-control"  aria-label="Username" aria-describedby="basic-addon1">
+            </div>
+                
+            <div class="input-group mb-3">
+            <label for="cidade" class="input-group-text" id="basic-addon1">Cidade: </label>
+            <input type="text" name="cidade" maxlength="28" required id="cidade" class="form-control" aria-label="Username" aria-describedby="basic-addon1">
+            </div>  
+
+            <div class="input-group mb-3">
+            <label for="estados"  class="input-group-text" for="inputGroupSelect01">Estados:</label>
+            <select name="estados" id="estados" required class="form-select" id="inputGroupSelect01"></select>
+            </div>
+            
+            <div class="input-group">
+            <label for="" class="input-group-text">Tipo de moradia: </label>
+            <div class="input-group-text">
+            <label for="casa">Casa: </label>
+            <input type="radio" name="moradia" required id="casa"class="form-check-input mt-0">
+            </div>
+
+            <div class="input-group-text">
+            <label for="ap">Apartamento: </label>
+            <input type="radio" name="moradia"  required id="ap"class="form-check-input mt-0">
+            </div>
+            
+            </div>
+
+            <div class="input-group mb-3">
+            <label class="input-group-text"> Último emprego </label>
+            <textarea name="curriculo" id="curriculo" cols="30" rows="10" maxlength="1000" required  class="form-control" placeholder="Descreva sua ultima experiência profissional" aria-label="Username" aria-describedby="basic-addon1"></textarea>
+            </div>
+
+            <div class="input-group mb-3">
+            <label for="cargo" class="input-group-text" id="basic-addon1">Cargo:</label>
+            <input type="text" name="cargo" id="cargo" maxlength="40" required class="form-control"  aria-label="Username" aria-describedby="basic-addon1"></input>
+            </div>
+
+            <div class="input-group mb-3">
+            <label for="descricao"  class="input-group-text" id="basic-addon1">Descriçao do cargo:</label>
+            <input name="descricao" id="descricao" maxlength="500" required class="form-control"  aria-label="Username" aria-describedby="basic-addon1"></input>
+            </div>
+            
+            <div class="input-group mb-3">
+            <label for="data" class="input-group-text" id="basic-addon1">Data de inicio</label>
+            <input type="text" id="data" class="form-control"  aria-label="Username" aria-describedby="basic-addon1">
+            </div>
+            
+            <div>
+            <button type="submit"  class="btn btn-outline-success">Enviar formulario</button>
+            
+            <button type="reset" class="btn btn-outline-danger">Excluir formuario</button>
+            </div>  
+
+
+        </div>
+
+
+
+    </main>
+    
+    <script src="script.js"></script>
+</body>
+</html>
