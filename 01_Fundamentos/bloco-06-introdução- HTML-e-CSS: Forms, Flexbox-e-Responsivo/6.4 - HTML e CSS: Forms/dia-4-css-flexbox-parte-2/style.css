@@ -52,21 +52,22 @@
     display: flex;
     flex-direction: column;
     flex-basis: 700px;
-  }
-  
-  .movie-container h2 {
+    flex-grow: 10;
+}
+
+.movie-container h2 {
     margin: 40px 0;
     text-align: center;
-  }
-  
-  .card-container {
-      display: flex;
-      flex-wrap: wrap;
-      justify-content: space-around;
-    }
-    
-    .card-container div {
-      flex-basis: 16%;
+}
+
+.card-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.card-container div {
+    flex-basis: 16%;
     align-items: center;
     background-color: #5C687C;
     border: black solid 1px;
