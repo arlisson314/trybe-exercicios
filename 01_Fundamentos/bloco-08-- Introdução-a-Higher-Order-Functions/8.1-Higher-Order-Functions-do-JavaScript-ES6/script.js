@@ -77,3 +77,28 @@
 
 // repeat(4, isEven); // Testa quais números serão pares;
 // repeat(4, isOdd); // Testa quais números serão ímpares;
+
+const certo = {
+    verdades: (callBack) => {
+      const mensage = callBack();
+      console.log(mensage);
+    }
+};
+
+const graças = () => 'Em tudo dai graças!';
+const valioso = () => 'Arlisson é muito valioso para Deus!';
+const criador = () => 'Louvado seja o nome do Pai criador dos céus e da terra!'
+
+// verdades(criador);
+
+const momentos = 'difici'
+//dificil, triste, desanimado
+
+if (momentos === 'dificil') {
+  certo.verdades(graças);
+} else if (momentos === 'triste') {
+  certo.verdades(valioso);
+} else {
+  certo.verdades(criador);
+};
+
