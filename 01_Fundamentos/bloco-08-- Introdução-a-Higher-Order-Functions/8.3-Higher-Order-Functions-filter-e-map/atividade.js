@@ -65,10 +65,28 @@ const books = [
 
 
 //   1 - Crie um array com strings no formato NOME_DO_LIVRO - GÊNERO_DO_LIVRO - NOME_DA_PESSOA_AUTORA
-const array = books.map((element) => `${element.name} - ${element.genre} - ${element.author.name}`.toUpperCase());
-console.log(array)
+// const array = books.map((element) => `${element.name} - ${element.genre} - ${element.author.name}`.toUpperCase());
+// console.log(array)
 
 // 2 - Construa um array de objetos a partir do array de livros. Cada objeto deve conter uma propriedade author , com o nome da pessoa autora do livro, e uma propriedade age com a idade dessa pessoa quando o livro foi lançado. O array deve ser ordenado por idade, ou seja, da pessoa mais jovem para a mais velha considerando suas idades quando o livro foi lançado.
 // Dica: use as funções map , sort
-// const nome = books.map((element) => element.author);
-// console.log(nome);
+const data = books.map((element) => {
+    const age = element.releaseYear - element.author.birthYear;
+    const  author = element.author.name;
+    return {age: age, author: author} 
+});
+data.sort((a ,b) => a.age - b.age)
+console.log(data);
+
+//----------------------------------------------------------------------------------------------
+
+const newFunction = (array) => {
+    const funcao = (element) => {
+        const age = element.releaseYear - element.author.birthYear;
+        const  author = element.author.name;
+        return {age: age, author: author} 
+    }
+    return array.map(funcao).sort((a, b) => a.age - b.age);
+};
+
+console.log(newFunction(books));
