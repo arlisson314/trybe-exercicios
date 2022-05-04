@@ -5,6 +5,12 @@ function App() {
   return (
     <div className="App">
       <header className="App-header">
+
+        <label htmlFor="id-email">
+          Email
+          <input id="id-email" type="email" />
+        </label>
+      
         <img src={logo} className="App-logo" alt="logo" />
         <p>
           Edit <code>src/App.js</code> and save to reload.
