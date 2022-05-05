@@ -1,29 +1,12 @@
-import logo from './logo.svg';
-import './App.css';
-
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-
         <label htmlFor="id-email">
           Email
           <input id="id-email" type="email" />
         </label>
-      
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+        <input id='btn-send' data-testid="id-send" type= 'button' value='Enviar' />
+        <input id='btn-back' type='button' value='Voltar' />
     </div>
   );
 }
